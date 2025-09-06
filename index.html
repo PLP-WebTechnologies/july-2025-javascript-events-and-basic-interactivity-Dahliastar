@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactivity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="load()">
+    <h1>JavaScript Interactivity Example</h1>
+    <button onclick="this.style.background='teal'" onmouseover="this.innerText='You hovered'">Click me to change my color</button><br><br>
+    <a id="glink">Google Link</a>
+    <input type="text" id="myinput" placeholder="Type sth..."><br><br>
+    <input type="textarea" id="textarea" placeholder="Type text here..."></textarea>
+    <p>Enter your name: </p>
+    <input type="text" id="fname" onchange="uppercase()"><br><br>
+    
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <span id="usernameError" style="color:red"></span><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span id="emailError" style="color:red"></span>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <spa id="passwordError" style="color:red"></span>
+
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
